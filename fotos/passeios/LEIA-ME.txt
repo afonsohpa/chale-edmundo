@@ -1,0 +1,14 @@
+Coloque nesta pasta uma foto de cada lugar, em JPG, com estes nomes exatos:
+
+cachoeira-do-lageado.jpg
+sorveteria-eisland.jpg
+dona-chica-na-horta.jpg
+emporio-dos-mellos.jpg
+azeite-sabia.jpg
+vinicola-villa-santa-maria.jpg
+parada-bike.jpg
+
+Formato ideal: horizontal (4:3), cerca de 1200 px de largura.
+Enquanto a foto não existir, o site mostra automaticamente um ícone no lugar.
+
+A foto panorâmica da cidade vai na pasta "fotos", com o nome campos-do-jordao.jpg
