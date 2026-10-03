@@ -63,7 +63,8 @@ section{padding-block:clamp(64px,9vw,112px)}
 .door.l::after,.door.r::after{content:"";position:absolute;top:50%;width:10px;height:120px;transform:translateY(-50%);border-radius:6px;background:linear-gradient(90deg,#1b1b1b,#4a4a4a,#1b1b1b);box-shadow:0 4px 10px #0007}
 .door.l::after{right:22px}.door.r::after{left:22px}
 .plaque{position:relative;z-index:3;display:grid;justify-items:center;align-content:center;gap:22px;min-height:100%;padding:24px;text-align:center;color:var(--cream);transition:opacity .6s ease,transform .8s ease}
-.plaque .board{width:min(78vw,420px);background:var(--moss);border:6px solid var(--coffee);border-radius:10px;box-shadow:0 30px 60px #0009;padding:6px}
+.plaque .board{width:min(78vw,420px);background:var(--moss);border:6px solid var(--coffee);border-radius:10px;box-shadow:0 30px 60px #0009;padding:0;overflow:hidden}
+.plaque .board img{display:block;width:100%;height:auto}
 .plaque small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.9}
 .knock{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:14px 26px;border-radius:999px;border:1px solid #fefbef80;background:#24120899;color:var(--cream);font-weight:700;font-size:15px;letter-spacing:.02em;backdrop-filter:blur(4px)}
 .knock .dot{width:8px;height:8px;border-radius:50%;background:var(--ochre);animation:pulse 1.6s infinite}
@@ -104,7 +105,7 @@ body.arrived .hero-photo{animation:settle 2.4s cubic-bezier(.2,.7,.2,1)}
 .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#24120800 40%,#241208cc 100%)}
 .hero-photo .tag{position:absolute;left:16px;bottom:16px;z-index:2;color:var(--cream);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
 .hero-copy{background:var(--moss);color:var(--cream);padding:clamp(36px,6vw,72px) var(--gutter);display:grid;gap:26px;align-content:center}
-.hero-copy .logo{max-width:340px;margin-left:-8px}
+.hero-copy .logo{width:min(100%,380px);height:auto;margin-left:-13px} /* SVG já inclui a área de proteção (10% da altura) */
 .hero-copy h1{font-size:clamp(46px,6.4vw,88px)}
 .hero-copy p{max-width:520px;font-size:18px;opacity:.9}
 @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr 1fr}.hero-photo{min-height:640px}}
@@ -284,7 +285,7 @@ footer .num{font-family:var(--serif);font-size:22px;margin-right:8px;font-varian
   <div class="seam" aria-hidden="true"></div>
   <div class="plaque">
     <small>Você chegou</small>
-    <div class="board"><img src="fotos/logo.jpg" alt="Chalé Edmundo, Campos do Jordão" width="1200" height="600"></div>
+    <div class="board"><img src="fotos/logo/logo-chale-edmundo.svg" alt="Chalé Edmundo, Campos do Jordão" width="1021" height="435"></div>
     <button class="knock" id="knock" type="button"><span class="dot"></span>Toque para abrir a porta</button>
   </div>
   <div class="words" aria-live="polite"><p>Chegue.</p><p>Respire.</p><p class="last">Que bom receber você.<small>Bem-vindo ao Chalé Edmundo</small></p></div>
@@ -306,7 +307,7 @@ footer .num{font-family:var(--serif);font-size:22px;margin-right:8px;font-varian
   <div class="hero-grid">
     <div class="hero-photo" role="img" aria-label="Sala do Chalé Edmundo com sofá-cama e janelas para o verde"><span class="tag">Bairro dos Mellos · Campos do Jordão</span></div>
     <div class="hero-copy roof">
-      <img class="logo" src="fotos/logo.jpg" alt="Chalé Edmundo, Campos do Jordão" width="1200" height="600">
+      <img class="logo" src="fotos/logo/logo-chale-edmundo.svg" alt="Chalé Edmundo, Campos do Jordão" width="1021" height="435">
       <h1>Que bom receber você.</h1>
       <p>A casa é sua pelos próximos dias. Aqui está tudo o que você precisa: a senha do Wi-Fi, os combinados da casa e os nossos lugares preferidos na serra.</p>
       <nav class="quick" aria-label="Atalhos">
